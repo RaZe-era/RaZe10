@@ -1,4 +1,3 @@
-```typescript
 // components/PricingCardV2.tsx
 import { motion } from 'framer-motion';
 import { PricingTierUSD } from '../data/services';
@@ -103,4 +102,3 @@ const PricingCardV2: React.FC<PricingCardV2Props> = ({ tier, serviceName, servic
 };
 
 export default PricingCardV2;
-```
