@@ -1,4 +1,3 @@
-```typescript
 // components/PortfolioShowcase.tsx
 import { motion } from 'framer-motion';
 import { PortfolioItem } from '../data/portfolio';
@@ -57,4 +56,3 @@ const PortfolioShowcase: React.FC<PortfolioShowcaseProps> = ({ items }) => {
   );
 };
 export default PortfolioShowcase;
-```
