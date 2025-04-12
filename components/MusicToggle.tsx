@@ -1,4 +1,3 @@
-```typescript
 // components/MusicToggle.tsx
 import React, { useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause, FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
@@ -90,4 +89,3 @@ const MusicToggle = () => {
 };
 
 export default MusicToggle;
-```
