@@ -1,4 +1,3 @@
-```typescript
 // data/portfolio.ts
 export interface PortfolioItem {
   id: string;
@@ -21,4 +20,3 @@ export const portfolioSamples: PortfolioItem[] = [
   { id: 'web-ecommerce', title: 'E-commerce Platform UI', category: 'Web Design', imageUrl: '/images/portfolio/sample-mockup-web.jpg', description: 'High-fidelity website visual.', glowColor: 'blue' },
   // Add more samples for different categories
 ];
-```
