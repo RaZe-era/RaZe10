@@ -1,4 +1,3 @@
-```typescript
 // components/ServiceCard.tsx
 import { motion } from 'framer-motion';
 import { ServiceCategoryExpanded } from '../data/services';
@@ -75,4 +74,3 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
 };
 
 export default ServiceCard;
-```
