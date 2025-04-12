@@ -1,4 +1,3 @@
-```typescript
 // components/AboutSection.tsx
 import { motion } from 'framer-motion';
 import { FaRocket, FaRegLightbulb } from 'react-icons/fa'; // Example Icons
@@ -71,4 +70,3 @@ const AboutSection = () => {
   );
 };
 export default AboutSection;
-```
