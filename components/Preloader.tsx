@@ -1,4 +1,3 @@
-```typescript
 // components/Preloader.tsx
 import { motion } from 'framer-motion';
 
@@ -44,4 +43,3 @@ const Preloader = () => {
 };
 
 export default Preloader;
-```
