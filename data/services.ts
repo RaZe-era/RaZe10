@@ -1,4 +1,3 @@
-```typescript
 // data/services.ts
 import { IconType } from 'react-icons';
 import { FaPaintBrush, FaBullhorn, FaDesktop, FaShareAlt, FaCalendarAlt, FaLightbulb, FaPalette, FaFilePowerpoint, FaMobileAlt, FaShoppingBag, FaUserTie, FaBookOpen, FaUsers, FaPenNib, FaEnvelopeOpenText, FaUtensils, FaAddressCard, FaQuestionCircle, FaInstagram, FaHamburger, FaFilm } from 'react-icons/fa'; // Added more icons
@@ -162,4 +161,3 @@ export const serviceCategoriesExpanded: ServiceCategoryExpanded[] = [
       tiers: [], // No standard tiers, link directly to booking form/consultation
     },
 ];
-```
