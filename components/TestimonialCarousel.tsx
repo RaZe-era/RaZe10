@@ -1,4 +1,3 @@
-```typescript
 // components/TestimonialCarousel.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -95,4 +94,3 @@ const TestimonialCarousel = () => {
 };
 
 export default TestimonialCarousel;
-```
