@@ -1,0 +1,98 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Import Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap'); */
+
+:root {
+  /* Define glow colors using CSS Variables */
+  --glow-cyan-rgb: 6, 182, 212; --glow-magenta-rgb: 217, 70, 239;
+  --glow-yellow-rgb: 234, 179, 8; --glow-blue-rgb: 59, 130, 246;
+  --glow-purple-rgb: 139, 92, 246; --glow-indigo-rgb: 99, 102, 241;
+  --glow-white-rgb: 240, 240, 240; --glow-red-rgb: 220, 38, 38;
+  --glow-green-rgb: 34, 197, 94; --glow-pink-rgb: 236, 72, 153;
+
+  /* Define glow shadows */
+  --glow-cyan: 0 0 5px rgba(var(--glow-cyan-rgb), 0.8), 0 0 10px rgba(var(--glow-cyan-rgb), 0.6), 0 0 15px rgba(var(--glow-cyan-rgb), 0.4);
+  --glow-magenta: 0 0 5px rgba(var(--glow-magenta-rgb), 0.8), 0 0 10px rgba(var(--glow-magenta-rgb), 0.6), 0 0 15px rgba(var(--glow-magenta-rgb), 0.4);
+  --glow-yellow: 0 0 5px rgba(var(--glow-yellow-rgb), 0.8), 0 0 10px rgba(var(--glow-yellow-rgb), 0.6), 0 0 15px rgba(var(--glow-yellow-rgb), 0.4);
+  --glow-blue: 0 0 5px rgba(var(--glow-blue-rgb), 0.8), 0 0 10px rgba(var(--glow-blue-rgb), 0.6), 0 0 15px rgba(var(--glow-blue-rgb), 0.4);
+  --glow-purple: 0 0 5px rgba(var(--glow-purple-rgb), 0.8), 0 0 10px rgba(var(--glow-purple-rgb), 0.6), 0 0 15px rgba(var(--glow-purple-rgb), 0.4);
+  --glow-indigo: 0 0 5px rgba(var(--glow-indigo-rgb), 0.8), 0 0 10px rgba(var(--glow-indigo-rgb), 0.6), 0 0 15px rgba(var(--glow-indigo-rgb), 0.4);
+  --glow-white: 0 0 5px rgba(var(--glow-white-rgb), 0.8), 0 0 10px rgba(var(--glow-white-rgb), 0.6), 0 0 15px rgba(var(--glow-white-rgb), 0.4);
+  --glow-red: 0 0 5px rgba(var(--glow-red-rgb), 0.8), 0 0 10px rgba(var(--glow-red-rgb), 0.6), 0 0 15px rgba(var(--glow-red-rgb), 0.4);
+  --glow-green: 0 0 5px rgba(var(--glow-green-rgb), 0.8), 0 0 10px rgba(var(--glow-green-rgb), 0.6), 0 0 15px rgba(var(--glow-green-rgb), 0.4);
+  --glow-pink: 0 0 5px rgba(var(--glow-pink-rgb), 0.8), 0 0 10px rgba(var(--glow-pink-rgb), 0.6), 0 0 15px rgba(var(--glow-pink-rgb), 0.4);
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+}
+
+body {
+  @apply bg-gray-900 text-gray-100 antialiased;
+  /* font-family: 'YourChosenFont', sans-serif; */
+  background-image: radial-gradient(circle at top right, rgba(139, 92, 246, 0.05), transparent 50%),
+                    radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.05), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Custom Glow Utilities */
+@layer utilities {
+  .text-glow-cyan { text-shadow: var(--glow-cyan); } .text-glow-magenta { text-shadow: var(--glow-magenta); }
+  .text-glow-yellow { text-shadow: var(--glow-yellow); } .text-glow-blue { text-shadow: var(--glow-blue); }
+  .text-glow-purple { text-shadow: var(--glow-purple); } .text-glow-indigo { text-shadow: var(--glow-indigo); }
+  .text-glow-white { text-shadow: var(--glow-white); } .text-glow-red { text-shadow: var(--glow-red); }
+  .text-glow-green { text-shadow: var(--glow-green); } .text-glow-pink { text-shadow: var(--glow-pink); }
+
+  .box-glow-cyan { box-shadow: 0 0 15px rgba(var(--glow-cyan-rgb), 0.6); } .box-glow-magenta { box-shadow: 0 0 15px rgba(var(--glow-magenta-rgb), 0.6); }
+  .box-glow-yellow { box-shadow: 0 0 15px rgba(var(--glow-yellow-rgb), 0.6); } .box-glow-blue { box-shadow: 0 0 15px rgba(var(--glow-blue-rgb), 0.6); }
+  .box-glow-purple { box-shadow: 0 0 15px rgba(var(--glow-purple-rgb), 0.6); } .box-glow-indigo { box-shadow: 0 0 15px rgba(var(--glow-indigo-rgb), 0.6); }
+
+  .shadow-text { text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+}
+
+/* react-datepicker Customization */
+.react-datepicker-wrapper { width: 100%; }
+.react-datepicker__input-container input { @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-400 text-white; }
+.react-datepicker-popper { z-index: 50 !important; }
+.react-datepicker { @apply bg-gray-800 border border-gray-700 rounded-lg shadow-lg font-sans text-sm; font-family: inherit !important; }
+.react-datepicker__header { @apply bg-gray-700 border-b border-gray-600 rounded-t-lg p-2; }
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker__day-name { @apply text-gray-100 font-semibold; }
+.react-datepicker__navigation-icon::before { border-color: #cbd5e1 !important; border-width: 2px 2px 0 0 !important; }
+.react-datepicker__navigation:hover .react-datepicker__navigation-icon::before { border-color: #f1f5f9 !important; }
+.react-datepicker__day { @apply text-gray-300 rounded-full w-8 h-8 leading-8 text-center m-1 transition-colors duration-200; }
+.react-datepicker__day:hover { @apply bg-indigo-600 text-white; }
+.react-datepicker__day--selected, .react-datepicker__day--keyboard-selected { @apply bg-indigo-500 text-white font-bold; }
+.react-datepicker__day--disabled { @apply text-gray-500 cursor-not-allowed opacity-50; }
+.react-datepicker__day--outside-month { @apply text-gray-600; }
+.react-datepicker__time-container { @apply border-l border-gray-700; width: 100px !important; }
+.react-datepicker__time-box { width: 100% !important; }
+.react-datepicker__time-list { height: calc(198px) !important; padding-left: 0; padding-right: 0; }
+.react-datepicker__time-list-item { @apply flex items-center justify-center h-8 text-gray-300 transition-colors duration-200; padding-left: 5px !important; padding-right: 5px !important; margin: 2px 0; }
+.react-datepicker__time-list-item:hover { @apply bg-indigo-600 text-white rounded-md; }
+.react-datepicker__time-list-item--selected { @apply bg-indigo-500 text-white font-bold rounded-md; }
+.react-datepicker__time-list-item--disabled { @apply text-gray-600 cursor-not-allowed; }
+
+/* Swiper Button Styling */
+:root {
+  --swiper-navigation-size: 30px; /* Adjust size */
+  --swiper-theme-color: #eab308; /* Yellow for nav/pagination */
+}
+.swiper-button-next, .swiper-button-prev { color: var(--swiper-theme-color) !important; }
+.swiper-pagination-bullet-active { background-color: var(--swiper-theme-color) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #1f2937; }
+::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 4px;}
+::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+/* Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 5px rgba(var(--glow-yellow-rgb), 0.5), 0 0 10px rgba(var(--glow-yellow-rgb), 0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 15px rgba(var(--glow-yellow-rgb), 0.8), 0 0 25px rgba(var(--glow-yellow-rgb), 0.6); }
+}
+.animate-pulse-glow { animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
