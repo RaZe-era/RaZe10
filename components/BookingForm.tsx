@@ -1,4 +1,3 @@
-```typescript
 // components/BookingForm.tsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -159,4 +158,3 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedBookingInfo }) => {
 };
 
 export default BookingForm;
-```
