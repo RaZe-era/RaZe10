@@ -1,4 +1,3 @@
-```typescript
 // components/Header.tsx
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -38,4 +37,3 @@ const Header = () => {
 };
 
 export default Header;
-```
