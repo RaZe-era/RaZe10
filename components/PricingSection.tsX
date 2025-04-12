@@ -1,4 +1,3 @@
-```typescript
 // components/PricingSection.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -104,4 +103,3 @@ const PricingSection: React.FC<PricingSectionProps> = ({ services, onSelectTier 
 }
 
 export default PricingSection;
-```
