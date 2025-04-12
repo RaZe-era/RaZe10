@@ -1,4 +1,3 @@
-```typescript
 // components/CursorFollower.tsx
 import React from 'react';
 import dynamic from 'next/dynamic';
@@ -32,4 +31,3 @@ const CursorFollower = () => {
 };
 
 export default CursorFollower;
-```
