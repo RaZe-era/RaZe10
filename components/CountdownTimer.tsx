@@ -1,4 +1,3 @@
-```typescript
 // components/CountdownTimer.tsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -67,4 +66,3 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   );
 };
 export default CountdownTimer;
-```
