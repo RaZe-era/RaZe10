@@ -1,4 +1,3 @@
-```typescript
 // components/CallToActionBanner.tsx
 import { motion } from 'framer-motion';
 import { FaEmpire, FaWhatsapp, FaInstagram, FaPaperPlane } from 'react-icons/fa';
@@ -26,4 +25,3 @@ const CallToActionBanner = () => {
   );
 };
 export default CallToActionBanner;
-```
