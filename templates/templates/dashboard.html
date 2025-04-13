@@ -1,0 +1,10 @@
+```html
+<!-- templates/dashboard.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Dashboard</h1>
+    <p>This is a protected area only logged-in users can see.</p>
+    <p>Welcome, {{ current_user.username }}!</p>
+{% endblock %}
+```
